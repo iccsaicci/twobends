@@ -120,6 +120,24 @@
 	    </FILTER>
 	
 	<FILTER TYPE="HistoryPoints">
+              <PARAM NAME="OutputFile">bend_a</PARAM> <PARAM NAME="OutputFrequency">500</PARAM> <PARAM NAME="plane">
+                100, 100, 43.461,43.371,0, 44.35,44.262,0, 44.35,44.262,1, 43.461,43.371,1
+	      </PARAM>
+	    </FILTER>
+
+        <FILTER TYPE="HistoryPoints">
+              <PARAM NAME="OutputFile">bend_c</PARAM> <PARAM NAME="OutputFrequency">500</PARAM> <PARAM NAME="plane">
+                100, 100, 43.461,42.459,0, 44.35,41.568,0, 44.35,41.568,1, 43.461,42.459,1
+	      </PARAM>
+	    </FILTER>    
+
+        <FILTER TYPE="HistoryPoints">
+              <PARAM NAME="OutputFile">bend_b</PARAM> <PARAM NAME="OutputFrequency">500</PARAM> <PARAM NAME="plane">
+                100, 100, 43.65,42.915,0, 44.86,42.915,0, 44.86,42.915,1, 43.65,42.915,1
+	      </PARAM>
+	    </FILTER>
+
+	<FILTER TYPE="HistoryPoints">
               <PARAM NAME="OutputFile">newlet_a</PARAM> <PARAM NAME="OutputFrequency">500</PARAM> <PARAM NAME="plane">
                 100, 100, 36.1,39.72,0, 36.1,39.72,1, 36.1,38.46,1, 36.1,38.46,0
 	      </PARAM>
@@ -168,7 +186,7 @@
 	    </FILTER>
 
         <FILTER TYPE="HistoryPoints">
-              <PARAM NAME="OutputFile">newbend_cc</PARAM> <PARAM NAME="OutputFrequency">500</PARAM> <PARAM NAME="plane">
+              <PARAM NAME="OutputFile">newbend_c</PARAM> <PARAM NAME="OutputFrequency">500</PARAM> <PARAM NAME="plane">
                 100, 100, 35.544, 39.909,0, 34.654999999999994, 39.018,0, 34.654999999999994, 39.018,1, 35.544, 39.909,1
 	      </PARAM>
 	    </FILTER>
@@ -187,7 +205,7 @@
 	
 	<FILTER TYPE="HistoryPoints">
               <PARAM NAME="OutputFile">history1</PARAM> <PARAM NAME="OutputFrequency">500</PARAM> <PARAM NAME="plane">
-                100, 100, 43.65,42.915,0, 34.144999999999996, 40.365,0, 34.144999999999996, 40.365,1, 43.65,42.915,1
+                100, 100, 43.65,42.915,0, 44.86,42.915,0, 44.86,42.915,1, 43.65,42.915,1
 	      </PARAM>
 	    </FILTER>
 
