@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <NEKTAR>
     <EXPANSIONS>
-        <E COMPOSITE="C[200,201]" NUMMODES="3" TYPE="MODIFIED" FIELDS="u,v,w" />
-        <E COMPOSITE="C[200,201]" NUMMODES="2" TYPE="MODIFIEDQUADPLUS1" FIELDS="p" />
+        <E COMPOSITE="C[321,322]" NUMMODES="3" TYPE="MODIFIED" FIELDS="u,v,w" />
+        <E COMPOSITE="C[321,322]" NUMMODES="2" TYPE="MODIFIEDQUADPLUS1" FIELDS="p" />
     </EXPANSIONS>
     <CONDITIONS>
         <SOLVERINFO>
@@ -57,9 +57,9 @@
         <V ID="3"> p </V>
     </VARIABLES>
     <BOUNDARYREGIONS>
-        <B ID="0"> C[199] </B>    <!-- wall-->
-        <B ID="1"> C[197]       </B>      <!-- inflow -->
-        <B ID="2"> C[198]       </B>      <!-- outflow -->
+        <B ID="0"> C[320] </B>    <!-- wall-->
+        <B ID="1"> C[318]       </B>      <!-- inflow -->
+        <B ID="2"> C[319]       </B>      <!-- outflow -->
     </BOUNDARYREGIONS>
     <BOUNDARYCONDITIONS>
         <REGION REF="0"> <!-- wall -->
