@@ -121,7 +121,7 @@
 	
 	<FILTER TYPE="HistoryPoints">
               <PARAM NAME="OutputFile">bend_a</PARAM> <PARAM NAME="OutputFrequency">500</PARAM> <PARAM NAME="plane">
-                100, 100, 43.44,43.36,0, 44.35,44.262,0, 44.35,44.262,1, 43.44,43.36,1
+                100, 100, 43.6,43.5,0, 44.35,44.262,0, 44.35,44.262,1, 43.6,43.5,1
 	      </PARAM>
 	    </FILTER>
 
