@@ -199,7 +199,7 @@
 
         <FILTER TYPE="HistoryPoints">
               <PARAM NAME="OutputFile">newbend_b</PARAM> <PARAM NAME="OutputFrequency">500</PARAM> <PARAM NAME="plane">
-                100, 100, 35.3, 40.365,0, 44.86,42.915,0, 44.86,42.915,1, 35.3, 40.365,1
+                100, 100, 35.3, 40.365,0, 34.2,40.365,0, 34.2,40.365,1, 35.3, 40.365,1
 	      </PARAM>
 	    </FILTER>
 	
