@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <NEKTAR>
     <EXPANSIONS>
-        <E COMPOSITE="C[321,322]" NUMMODES="3" TYPE="MODIFIED" FIELDS="u,v,w" />
-        <E COMPOSITE="C[321,322]" NUMMODES="2" TYPE="MODIFIEDQUADPLUS1" FIELDS="p" />
+        <E COMPOSITE="C[321,322]" NUMMODES="5" TYPE="MODIFIED" FIELDS="u,v,w" />
+        <E COMPOSITE="C[321,322]" NUMMODES="4" TYPE="MODIFIEDQUADPLUS1" FIELDS="p" />
     </EXPANSIONS>
     <CONDITIONS>
         <SOLVERINFO>
@@ -32,9 +32,9 @@
         </GLOBALSYSSOLNINFO>
 
     <PARAMETERS>
-        <P> TimeStep      =    1.0e-3                                       </P> <!-- Time step -->   
-        <P> NumSteps      =    10000                                        </P> <!-- Number of step -->
-        <P> IO_CheckSteps =    1000                                        </P> <!-- Number of step to write the intermediate results -->
+        <P> TimeStep      =    5.0e-4                                       </P> <!-- Time step -->   
+        <P> NumSteps      =    100000                                        </P> <!-- Number of step -->
+        <P> IO_CheckSteps =    10000                                        </P> <!-- Number of step to write the intermediate results -->
         <P> IO_InfoSteps  =    100                                        </P> <!-- Number of step to print information -->
         <P> IO_CFLSteps   =    100                                        </P> <!-- Number of step to print CFL number  -->
         <P> Re            = 1000                                   </P>
@@ -84,18 +84,18 @@
       
         <!-- Specify the initial condition -->
         <FUNCTION NAME="InitialConditions">
-        <!--F VAR="u,v,w,p" FILE="restart1.rst" /-->    
-	<E VAR="u" VALUE="U0" />  
+        <F VAR="u,v,w,p" FILE="restart.rst" />    
+	<!--E VAR="u" VALUE="U0" />  
 	<E VAR="v" VALUE="V0" />
 	<E VAR="w" VALUE="W0" />
-	<E VAR="p" VALUE="0" />          
+	<E VAR="p" VALUE="0" /-->          
         </FUNCTION>
     </CONDITIONS>
     
 
     <FILTERS>
 
-        <!--FILTER TYPE="HistoryPoints">
+        <FILTER TYPE="HistoryPoints">
               <PARAM NAME="OutputFile">inlet_a</PARAM> <PARAM NAME="OutputFrequency">500</PARAM> <PARAM NAME="plane">
                 100, 100, 36.1,44.82,0, 36.1,44.82,1, 36.1,43.56,1, 36.1,43.56,0
 	      </PARAM>
@@ -201,10 +201,10 @@
               <PARAM NAME="OutputFile">newbend_b</PARAM> <PARAM NAME="OutputFrequency">500</PARAM> <PARAM NAME="plane">
                 100, 100, 35.355, 40.365,0, 44.86,42.915,0, 44.86,42.915,1, 35.355, 40.365,1
 	      </PARAM>
-	    </FILTER-->
+	    </FILTER>
 	
 	<FILTER TYPE="HistoryPoints">
-              <PARAM NAME="OutputFile">history1</PARAM> <PARAM NAME="OutputFrequency">500</PARAM> <PARAM NAME="plane">
+              <PARAM NAME="OutputFile">history2</PARAM> <PARAM NAME="OutputFrequency">500</PARAM> <PARAM NAME="plane">
                 100, 100, 43.65,42.915,0, 44.86,42.915,0, 44.86,42.915,1, 43.65,42.915,1
 	      </PARAM>
 	    </FILTER>
